@@ -1,0 +1,4 @@
+T = int(input())
+for i in range(T):
+    N , K = map(int , input().split())
+    print(K-1 if ((K-1) | K) <= N else K-2)
