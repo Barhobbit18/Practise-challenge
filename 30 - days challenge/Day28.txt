@@ -1,15 +1,3 @@
-import re
+careers@4g-capital.com
+ careers@sqli.com
 
-
-if __name__ == '__main__':
-    
-    gr = re.compile("^[a-z\.]+@gmail.com$")
-    ga = dict()
-    N = int(input().strip())
-    for _ in range(N):
-        Name, email = input().strip().split(' ')
-        if gr.match(email):
-            ga[email] = Name
-
-    sorted_names = sorted(ga.values())
-    print(*sorted_names, sep="\n");
